@@ -1,0 +1,103 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+font-family: sans-serif;
+
+}
+
+
+
+.container {
+  width: 100%;
+
+
+
+}
+
+.text-container {
+  width: 520px;
+  font-size: 70px;
+  height:40px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.dynamic-text,
+.static-text {
+  display: inline-block;
+}
+
+.static-text{
+  margin-right: 10px;
+  color: #41D3BD;
+}
+
+.dynamic-text{
+  list-style: none;
+  position: absolute;
+  overflow: hidden;
+  height: 40px;
+}
+
+.item {
+  position: relative;
+  top: 0;
+  animation: move 7s infinite 10s;
+  &:first-child {
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  &:nth-child(2) {
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  &:nth-child(3) {
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  &:nth-child(4) {
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  &:nth-child(5) {
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -196px; /* Adjusted the final position */
+  }
+}

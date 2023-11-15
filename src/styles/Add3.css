@@ -1,0 +1,92 @@
+/* .shadow-effect styles */
+/* Apply opacity only to the p tag within .shadow-effect */
+
+  
+  /* Rest of your styles for .shadow-effect */
+  .shadow-effect {
+
+    height: 1vh;
+    border-radius: 50px;
+
+    text-align: center;
+    display: flex;
+    color: white;
+    width: 32vw;
+    margin-top: 2%;
+    justify-content: space-between;
+    margin-left: 20%;
+    position: relative;
+	background: rgba(204, 204, 147, 0.4);
+
+  }
+ 
+  
+  /* Apply a different style to the name */
+  .shadow-effect p.name {
+    height: 3vh;
+    width: 20vw;
+    border-radius: 50px;
+    background-color: rgb(190, 227, 240);
+  
+  }
+  
+/* .shadow-effect paragraph styles */
+#customers-testimonials .shadow-effect p {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 0 17px 0;
+    font-weight: 300;
+}
+
+/* .testimonial-name styles */
+
+
+/* .item styles */
+#customers-testimonials .item {
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 80px;
+    opacity: 0.2;
+    transform: scale3d(0.8, 0.8, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    transform: scale3d(1.0, 1.0, 1);
+}
+
+/* .owl-carousel image styles */
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    max-width: 90px;
+    margin: 0 auto 17px;
+}
+
+/* .owl-dot styles */
+#customers-testimonials.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: #3190E7;
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #3190E7;
+}
